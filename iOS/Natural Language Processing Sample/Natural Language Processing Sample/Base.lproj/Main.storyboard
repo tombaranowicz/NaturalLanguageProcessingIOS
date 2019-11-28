@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Natural_Language_Processing_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I5c-qT-IbY">
+                                <rect key="frame" x="41.5" y="94" width="331" height="110.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I5c-qT-IbY" secondAttribute="height" multiplier="15:5" id="0xA-k2-87Y"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRb-v6-ylA">
+                                <rect key="frame" x="41.5" y="212" width="331" height="30"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dba-ud-Knf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KR-sd-9Rn">
+                                <rect key="frame" x="41.5" y="252" width="331" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WOr-EB-lCO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6V-VQ-Yhb">
+                                <rect key="frame" x="41.5" y="283" width="331" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QLV-Um-KSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HRb-v6-ylA" firstAttribute="leading" secondItem="I5c-qT-IbY" secondAttribute="leading" id="0z1-gB-5sH"/>
+                            <constraint firstItem="I5c-qT-IbY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="13Q-0j-aBv"/>
+                            <constraint firstItem="8KR-sd-9Rn" firstAttribute="leading" secondItem="I5c-qT-IbY" secondAttribute="leading" id="7n7-OI-ty5"/>
+                            <constraint firstItem="HRb-v6-ylA" firstAttribute="width" secondItem="I5c-qT-IbY" secondAttribute="width" id="8zg-VU-WDO"/>
+                            <constraint firstItem="8KR-sd-9Rn" firstAttribute="width" secondItem="I5c-qT-IbY" secondAttribute="width" id="A1g-6Y-3cy"/>
+                            <constraint firstItem="HRb-v6-ylA" firstAttribute="top" secondItem="I5c-qT-IbY" secondAttribute="bottom" constant="7.5" id="RAD-wj-5UE"/>
+                            <constraint firstItem="e6V-VQ-Yhb" firstAttribute="leading" secondItem="I5c-qT-IbY" secondAttribute="leading" id="UtX-UG-CkH"/>
+                            <constraint firstItem="e6V-VQ-Yhb" firstAttribute="width" secondItem="I5c-qT-IbY" secondAttribute="width" id="b2M-xf-TNN"/>
+                            <constraint firstItem="I5c-qT-IbY" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="f4b-Jn-50e"/>
+                            <constraint firstItem="I5c-qT-IbY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xUG-Qr-6xu"/>
+                            <constraint firstItem="8KR-sd-9Rn" firstAttribute="top" secondItem="HRb-v6-ylA" secondAttribute="bottom" constant="10" id="ymy-AV-Mnw"/>
+                            <constraint firstItem="e6V-VQ-Yhb" firstAttribute="top" secondItem="8KR-sd-9Rn" secondAttribute="bottom" constant="10" id="zf6-xN-bdH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mesageTextView" destination="I5c-qT-IbY" id="MVa-pc-SLp"/>
+                        <outlet property="sentimentLabel" destination="e6V-VQ-Yhb" id="An8-np-stG"/>
+                        <outlet property="spamLabel" destination="8KR-sd-9Rn" id="9nv-ki-Au2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
